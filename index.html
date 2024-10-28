@@ -4,6 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Newsletter Email</title>
+    <style  type="text/css">
+      @media screen and (max-width:599px){
+        #email-wrapper-desktop{
+          visibility: hidden;
+        }
+      }
+      @media screen and (min-width: 599px){
+        #email-wrapper-mobile{
+          visibility: hidden;
+        }
+      }
+    </style>
   </head>
 
   <body
@@ -38,8 +50,151 @@
         <tr height="30px"></tr>
         <tr>
           <td>
+            <table id="email-wrapper-mobile"
+            width="100%"
+            style="
+              width: 100%;
+              background-color: #fff;
+              display: block;
+              margin-left: auto;
+              margin-right: auto;
+            "
+            cellspacing="0"
+            cellpadding="0"
+            border="0">
+              <tbody>
+                <tr>
+                  <td>
+                    <!-- mobile email content starts from here -->
+                    <!-- logo and newsletter title -->
+                     <table id="email-header"
+                     cellspacing="0"
+                     cellpadding="0"
+                     border="0"
+                     width="100%"
+                     style="width: 100%">
+                      <tbody>
+                        <tr>
+                          <td>
+                            <table id="email-header-left"
+                            cellspacing="0"
+                            cellpadding="0"
+                            border="0"
+                            style="width: 100%">
+                              <tbody>
+                                <tr>
+                                  <td>
+                                    <div class="section logo">
+                                      <table id="mobile-logo"
+                                      cellspacing="0"
+                                      cellpadding="0"
+                                      border="0" width="100%">
+                                        <tbody>
+                                          <tr>
+                                            <td>
+                                              <!-- need another table for the content? -->
+                                              <a href="https://www.dormakaba.com/us-en">
+                                                <img
+                                                  src="./src/assets/images/logo_dk_clr.png"
+                                                  alt="dormakaba logo"
+                                                  style="
+                                                    display: block;
+                                                    width: 142px;
+                                                    max-width: 100%;
+                                                    margin-left: 10px;
+                                                    margin-top: 15px; 
+                                                  "
+                                                />
+                                              </a>
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </div>
+                                    <div class="section title">
+                                      <table id="title-mobile"
+                                      cellspacing="0"
+                                      cellpadding="0"
+                                      border="0" width="100%">
+                                        <tbody>
+                                          <tr>
+                                            <td style="font-size: 11px; padding-top: 10px;">
+                                              <!-- need another table for the content? -->
+                                               <!-- change newsletter title here -->
+                                                <div style="margin-left: 10px;">
+                                                  <div>News, insight and events</div>
+                                                  <div>
+                                                    <strong style="font-weight: 600"
+                                                      >February 2022</strong
+                                                    >
+                                                  </div>
+        
+                                                </div>
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </div>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                          <td>
+                            <table id="email-header-right"
+                            cellspacing="0"
+                            cellpadding="0"
+                            border="0">
+                              <tbody>
+                                <tr>
+                                  <td>
+                                    <table
+                                      id="logo-right"
+                                      cellspacing="0"
+                                      cellpadding="0"
+                                      border="0"
+                                      style="
+                                        width: auto;
+                                        margin-right: 0px;
+                                        margin-left: auto;
+                                      "
+                                    >
+                                      <tbody>
+                                        <tr>
+                                          <td
+                                            width="10px"
+                                            height="35px"
+                                            style="
+                                              background-color: #003594;
+                                              top: 0;
+                                              text-align: right;
+                                            "
+                                          ></td>
+                                        </tr>
+                                        <tr>
+                                          <td
+                                            width="10px"
+                                            height="35px"
+                                            style="background-color: #e4002a"
+                                          ></td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                      </tbody>
+                     </table>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
             <table
-              id="email-wrapper"
+              id="email-wrapper-desktop"
               width="100%"
               style="
                 width: 100%;
